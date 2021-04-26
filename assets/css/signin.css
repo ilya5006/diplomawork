@@ -1,0 +1,30 @@
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+input {
+    border: 0px;
+}
+
+input[type="text"], input[type="password"] {
+    font-size: 20px;
+    padding: 15px;
+
+    width: 600px;
+}
+
+input[name="password"] {
+    margin-top: 20px;
+}
+
+input[type="submit"] {
+    padding: 10px 20px;
+    font-size: 25px;
+    margin-top: 20px;
+
+    text-transform: uppercase;
+    cursor: pointer;
+}

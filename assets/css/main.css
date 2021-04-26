@@ -1,0 +1,43 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Spectral SC', sans-serif;
+}
+
+body, html {
+    height: 100%;
+}
+
+body {
+    background-color: #88B9DC;
+
+}
+
+body > div {
+    
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.page-title {
+    font-size: 50px;
+    text-align: center;
+
+    position: absolute;
+    
+    left: 0px;
+    right: 0px;
+
+    text-transform: uppercase;
+
+}
+
+.form-title {
+    font-size: 35px;
+    text-transform: uppercase;
+}
