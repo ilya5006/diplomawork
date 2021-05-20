@@ -1,0 +1,29 @@
+
+
+.admin-panel-button {
+    text-decoration: none;
+    text-transform: uppercase;
+
+    color: black;
+    background-color: #C4C4C4;
+    font-size: 30px;
+    padding: 10px 20px;
+
+    width: 100%;
+
+    text-align: center;
+}
+
+.admin-panel {
+    height: 300px;
+
+    display: flex;
+
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+body {
+    justify-content: center;
+    align-items: center;
+}
