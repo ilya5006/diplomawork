@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="./assets/css/main.css">
     <link rel="stylesheet" href="./assets/css/index.css">
 
-    <title>Главная страница</title>
+    <title>Тренажёр</title>
 </head>
 <body>
     <?php 

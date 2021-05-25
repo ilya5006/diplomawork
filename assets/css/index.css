@@ -1,0 +1,80 @@
+.trainer {
+    display: flex;
+    flex-direction: column;
+
+    width: 700px;
+}
+
+.wordsssets-panel {
+    position: absolute;
+
+    left: 0px;
+    top: 0px;
+
+    height: 100%;
+    width: 300px;
+
+    display: flex;
+    flex-direction: column;
+
+    background-color: #C4C4C4;
+}
+
+.wordsset, .search {
+    font-size: 35px;
+    margin-top: 20px;
+}
+
+.search {
+    padding-left: 30px;
+}
+
+.open-wordssets-panel {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    
+    display: inline-block;
+    cursor: pointer;
+
+    background-color: white;
+    padding: 10px;
+}
+
+.bar {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+}
+
+.trainer * {
+    font-size: 30px;
+}
+
+.words-container {
+    display: flex;
+    flex-flow: row wrap;
+    background-color: white;
+
+    padding: 15px;
+}
+
+.words-container p {
+    padding: 10px;
+}
+
+.words-input {
+    margin-top: 20px;
+    padding: 5px;
+}
+
+.begin {
+    width: 200px;
+    margin: 20px auto 0px;
+    text-transform: uppercase;
+}
+
+.highlight {
+    background-color: #C4C4C4;
+}
