@@ -1,0 +1,16 @@
+.wordsssets-panel {
+    display: flex;
+    flex-direction: column;
+
+    width: 1100px;
+
+}
+
+.wordsssets-panel * {
+    font-size: 32px;
+
+}
+
+.search {
+    text-align: center;
+}
