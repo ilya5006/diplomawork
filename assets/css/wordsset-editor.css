@@ -1,0 +1,86 @@
+.words {
+    display: flex;
+    flex-direction: column;
+
+    width: 800px;
+}
+
+
+.wordsset, .search {
+    font-size: 35px;
+    margin-top: 20px;
+}
+
+.search {
+    padding-left: 30px;
+}
+
+.words * {
+    font-size: 30px;
+}
+
+.words-container {
+    display: flex;
+    flex-flow: row wrap;
+    background-color: white;
+
+    padding: 15px;
+}
+
+.words-container p {
+    padding: 10px;
+}
+
+.words-input {
+    margin-top: 20px;
+    padding: 5px;
+}
+
+.update {
+    font-size: 20px;
+    padding: 15px;
+
+    position: absolute;
+
+    bottom: 20px;
+    right: 20px;
+    
+    text-transform: uppercase;
+}
+
+.ui-selecting {
+    background-color: #C6C6C6;
+}
+
+.ui-selected {
+    background-color: #F8C8C5;
+}
+
+.word {
+    margin: 5px;
+    cursor: default;
+}
+
+.enter-new-word {
+    margin-top: 20px;
+
+    padding-left: 10px;
+}
+
+.add-new-word {
+    text-transform: uppercase;
+    width: 200px;
+    margin: 5px auto 0px;
+}
+
+.delete {
+    font-size: 20px;
+    padding: 15px;
+
+    position: absolute;
+
+    bottom: 20px;
+    right: 200px;
+    
+    text-transform: uppercase;
+}
