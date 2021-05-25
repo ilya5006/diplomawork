@@ -1,0 +1,32 @@
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    width: 600px;
+}
+
+label {
+    background-color: #C6C6C6;
+    color: rgba(0, 0, 0, 0.5);
+
+    margin-top: 20px;
+
+
+    cursor: pointer;
+    padding-left: 20px;
+}
+
+form * {
+    font-size: 30px;
+}
+
+input[name="name"] {
+    padding: 20px;
+}
+
+input[type="submit"] {
+    width: 300px;
+    margin: 20px auto 0px;
+    text-transform: uppercase;
+}
