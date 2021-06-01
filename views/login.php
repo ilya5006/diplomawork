@@ -1,7 +1,7 @@
 <h1 class="page-title">Тренажёр для студентов</h1>
 
-<div class="signin">
-    <form method="POST" action="./../model/signin.php">
+<div class="login">
+    <form method="POST" action="./../model/login.php">
         <p class="form-title">Авторизация</p>
 
         <input type="text" name="login" placeholder="Логин">

@@ -1,3 +1,18 @@
+<?php
+session_start();
+
+require_once __DIR__ . '/model/functions/isUserAdmin.php';
+require_once __DIR__ . '/model/functions/getMysqli.php';
+require_once __DIR__ . '/model/config.php';
+
+$mysqli = getMysqli(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME);
+
+if (empty($_SESSION['id_user']) || ! isUserAdmin($mysqli, (int) $_SESSION['id_user'])) {
+    header('Location: /');
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,7 +27,7 @@
     <link rel="stylesheet" href="./assets/css/admin.css">
     <link rel="stylesheet" href="./assets/css/student-registration.css">
 
-    <title>Панель администратора</title>
+    <title>Регистрация студента</title>
 </head>
 <body>
     <?php 

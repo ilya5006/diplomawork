@@ -10,6 +10,9 @@
 
     <link rel="stylesheet" href="./assets/css/main.css">
     <link rel="stylesheet" href="./assets/css/login.css">
+    <link rel="stylesheet" href="./assets/css/messanger.css">
+
+    <script src="/assets/js/Classes/Messanger.js"></script>
 
     <title>Авторизация</title>
 </head>
@@ -17,5 +20,7 @@
     <?php 
     include './views/login.php';
     ?>
+
+    <script src="/assets/js/login.js"></script>
 </body>
 </html>

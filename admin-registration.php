@@ -1,8 +1,14 @@
 <?php
 session_start();
 
-if (empty($_SESSION['id_user'])) {
-    header('Location: /login.php');
+require_once __DIR__ . '/model/functions/isUserAdmin.php';
+require_once __DIR__ . '/model/functions/getMysqli.php';
+require_once __DIR__ . '/model/config.php';
+
+$mysqli = getMysqli(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME);
+
+if (empty($_SESSION['id_user']) || ! isUserAdmin($mysqli, (int) $_SESSION['id_user'])) {
+    header('Location: /');
 }
 
 ?>
@@ -18,13 +24,14 @@ if (empty($_SESSION['id_user'])) {
     <link href="https://fonts.googleapis.com/css2?family=Spectral+SC:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="./assets/css/main.css">
-    <link rel="stylesheet" href="./assets/css/index.css">
+    <link rel="stylesheet" href="./assets/css/admin.css">
+    <link rel="stylesheet" href="./assets/css/student-registration.css">
 
-    <title>Тренажёр</title>
+    <title>Регистрация студента</title>
 </head>
 <body>
     <?php 
-    include './views/index.php';
+    include './views/admin-registration.php';
     ?>
 </body>
 </html>

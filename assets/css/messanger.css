@@ -1,0 +1,26 @@
+.messagebox
+{
+    position: absolute;
+
+    bottom: 20px;
+    left: 0px;
+    right: 0px;
+
+    width: 50%;
+    margin: 0px auto;
+
+    display: block;
+    text-align: center;
+
+    background-color: blue;
+
+    color: white;
+
+    border: 3px solid black;
+}
+
+.messagebox p
+{
+    margin: 50px;
+    font-size: 30px;
+}
