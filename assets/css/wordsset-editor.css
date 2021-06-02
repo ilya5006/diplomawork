@@ -25,6 +25,11 @@
     background-color: white;
 
     padding: 15px;
+
+    height: 200px;
+
+    overflow-y: scroll;
+    resize: vertical;
 }
 
 .words-container p {

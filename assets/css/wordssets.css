@@ -6,6 +6,16 @@
 
 }
 
+.wordssets-container {
+    display: flex;
+    flex-direction: column;    
+}
+
+a {
+    color: black;
+    text-align: center;
+}
+
 .wordsssets-panel * {
     font-size: 32px;
 

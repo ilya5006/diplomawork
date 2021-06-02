@@ -9,27 +9,13 @@
 
 
     <div class="words-container">
-        <p class="word">Слово</p>
-        <p class="word">Слово</p>
-        <p class="word">Слово</p>
-        <p class="word">Слово</p>
-        <p class="word">Словоdwadwad</p>
-        <p class="word">Слово</p>
-        <p class="word">Слово</p>
-        <p class="word">Слово</p>
-        <p class="word">Слово</p>
-        <p class="word">СловWADWAdwadwaо</p>
-        <p class="word">Слово</p>
-        <p class="word">Слово</p>
-        <p class="word">СловDawdadо</p>
-        <p class="word">Слово</p>
-        <p class="word">Слово</p>
-        <p class="word">Слово</p>
-        <p class="word">Слово</p>
-        <p class="word">Слово</p>
-        <p class="word">Слово</p>
-        <p class="word">Слово</p>
-        <p class="word">Слово</p>
+        <?php
+        foreach ($words as $word):
+        ?>
+        <p class="word"><?=$word?></p>
+        <?php
+        endforeach; 
+        ?>
     </div>
     
     <input type="text" class="enter-new-word" placeholder="Введите слово">
