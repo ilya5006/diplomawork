@@ -14,10 +14,6 @@
         ?>
     </div>
     
-    <!-- <button class="wordsset enumeration">Набор слов 1</button>
-    <button class="wordsset enumeration">Набор слов 2</button>
-    <button class="wordsset enumeration">Набор слов 3</button>
-    <button class="wordsset enumeration">Набор слов 4</button>
-    <button class="wordsset enumeration">Набор слов 5</button> -->
-    
 </div>
+
+<a class="logout-button" href="/model/logout.php">Выйти</a>

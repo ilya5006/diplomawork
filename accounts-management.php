@@ -3,6 +3,7 @@ session_start();
 
 require_once __DIR__ . '/model/functions/isUserAdmin.php';
 require_once __DIR__ . '/model/functions/getMysqli.php';
+require_once __DIR__ . '/model/functions/getUsersInfo.php';
 require_once __DIR__ . '/model/config.php';
 
 $mysqli = getMysqli(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME);
@@ -10,6 +11,8 @@ $mysqli = getMysqli(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME);
 if (empty($_SESSION['id_user']) || ! isUserAdmin($mysqli, (int) $_SESSION['id_user'])) {
     header('Location: /');
 }
+
+$usersInfo = getUsersInfo($mysqli);
 
 ?>
 

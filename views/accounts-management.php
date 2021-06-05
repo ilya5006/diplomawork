@@ -5,14 +5,22 @@
     <h2 class="admin-panel-page-title">Наборы слов</h2>
     <input class="search" type="text" placeholder="Поиск">
 
-    <button class="account enumeration">
-        <span class="name">Аккаунт 1</span>
-        <span>|</span>
-        <span>3719</span>
-    </button>
-    <button class="account enumeration">Набор слов 2</button>
-    <button class="account enumeration">Набор слов 3</button>
-    <button class="account enumeration">Набор слов 4</button>
-    <button class="account enumeration">Набор слов 5</button>
+    <div class="accounts-management-container">
+        <?php
+        foreach ($usersInfo as $user):
+            if ($user['id'] == $_SESSION['id_user']) {
+                continue;
+            }
+        ?>
+            <a href="/student-account.php?id=<?=$user['id']?>" class="account enumeration">
+                <?=$user['fio']?>
+            </a>
+        <?php
+        endforeach;
+        ?>
+    </div>
+    
     
 </div>
+
+<a class="logout-button" href="/model/logout.php">Выйти</a>

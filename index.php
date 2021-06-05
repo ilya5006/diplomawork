@@ -5,6 +5,16 @@ if (empty($_SESSION['id_user'])) {
     header('Location: /login.php');
 }
 
+require_once __DIR__ . '/model/functions/getMysqli.php';
+require_once __DIR__ . '/model/functions/isUserAdmin.php';
+require_once __DIR__ . '/model/functions/getWordssets.php';
+
+require_once __DIR__ . '/model/config.php';
+
+$mysqli = getMysqli(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME);
+
+$wordssets = getWordssets($mysqli);
+
 ?>
 
 <!DOCTYPE html>
@@ -26,5 +36,10 @@ if (empty($_SESSION['id_user'])) {
     <?php 
     include './views/index.php';
     ?>
+
+    <script src="/assets/js/functions/shuffle.js"></script>
+    <script src="/assets/js/classes/Trainer.js"></script>
+    <script src="/assets/js/classes/WordsList.js"></script>
+    <script src="/assets/js/index.js"></script>
 </body>
 </html>

@@ -9,3 +9,5 @@
     <input type="text" name="group" placeholder="Группа">
     <input type="submit" value="Регистрация">
 </form>
+
+<a class="logout-button" href="/model/logout.php">Выйти</a>

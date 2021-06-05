@@ -24,3 +24,5 @@
 
 <button class="update">Обновить</button>
 <button class="delete">Удалить выбранное</button>
+
+<a class="logout-button" href="/model/logout.php">Выйти</a>

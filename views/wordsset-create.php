@@ -9,3 +9,5 @@
     <input type="submit" value="Создать">
 
 </form>
+
+<a class="logout-button" href="/model/logout.php">Выйти</a>

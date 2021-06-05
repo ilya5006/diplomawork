@@ -8,3 +8,5 @@
     <input type="text" name="fio" placeholder="ФИО">
     <input type="submit" value="Регистрация">
 </form>
+
+<a class="logout-button" href="/model/logout.php">Выйти</a>

@@ -23,4 +23,7 @@ if ($isUserExists) {
 
 $mysqli->query("INSERT INTO `users` VALUES (null, '$login', '$passwordHash', '$fio', $idRole)");
 
+$idUser = $mysqli->query("SELECT `id` FROM `users` ORDER BY `id` DESC")->fetch_assoc()['id'];
+$mysqli->query("INSERT INTO `id_group_id_user` VALUES ($idUser, '$group')");
+
 header('Location: /accounts-management.php');

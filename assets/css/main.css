@@ -56,3 +56,14 @@ input[type="submit"], button {
 .enumeration:nth-child(2n + 1) {
     background-color: #FFCCCC;
 }
+
+.logout-button {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    padding: 5px;
+    background-color: #EFEFEF;
+    font-size: 30px;
+    color: black;
+    text-transform: uppercase;
+}

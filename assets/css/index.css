@@ -5,6 +5,10 @@
     width: 700px;
 }
 
+.choosed-wordsset {
+    background-color: #40EF57;
+}
+
 .wordsssets-panel {
     position: absolute;
 
@@ -13,6 +17,8 @@
 
     height: 100%;
     width: 300px;
+
+    overflow-y: scroll;
 
     display: flex;
     flex-direction: column;
@@ -26,7 +32,7 @@
 }
 
 .search {
-    padding-left: 30px;
+    text-align: center;
 }
 
 .open-wordssets-panel {
@@ -58,6 +64,9 @@
     background-color: white;
 
     padding: 15px;
+
+    height: 200px;
+    overflow-y: hidden;
 }
 
 .words-container p {
@@ -77,4 +86,12 @@
 
 .highlight {
     background-color: #C4C4C4;
+}
+
+.correct-word {
+    color: #20d600;
+}
+
+.wrong-word {
+    color: red;
 }

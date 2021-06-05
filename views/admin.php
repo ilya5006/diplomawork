@@ -7,3 +7,5 @@
     <a class="admin-panel-button" href="/wordsset-create.php">Создать набор слов</a>
     <a class="admin-panel-button" href="/accounts-management.php">Все учётные записи</a>
 </div>
+
+<a class="logout-button" href="/model/logout.php">Выйти</a>
