@@ -2,7 +2,7 @@
 
 
 <div class="acсounts-management-panel">
-    <h2 class="admin-panel-page-title">Наборы слов</h2>
+    <h2 class="admin-panel-page-title">Все пользователи</h2>
     <input class="search" type="text" placeholder="Поиск">
 
     <div class="accounts-management-container">

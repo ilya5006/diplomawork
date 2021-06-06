@@ -27,8 +27,7 @@ document.querySelectorAll('.wordsset').forEach((wordsset) => {
 
 document.querySelector('.begin').addEventListener('click', () => {
     trainer.start();
-
-})
+});
 
 document.querySelector('.words-input').addEventListener('input', (event) => {
     let currentEnteredWord = event.target.value;

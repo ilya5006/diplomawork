@@ -36,5 +36,7 @@ $usersInfo = getUsersInfo($mysqli);
     <?php 
     include './views/accounts-management.php';
     ?>
+
+    <script src="/assets/js/accounts-management.js"></script>
 </body>
 </html>

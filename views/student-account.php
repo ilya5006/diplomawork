@@ -1,7 +1,7 @@
 <h1 class="page-title">Панель администратора</h1>
 
 <div class="wrapper">
-    <h2 class="admin-panel-page-title">Учётная запись студента</h2>
+    <h2 class="admin-panel-page-title">Учётная запись пользователя</h2>
     
     <div class="student-account">
         <p class="fio">ФИО: <?=$userInfo['fio']?></p>

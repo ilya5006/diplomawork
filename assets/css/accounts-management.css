@@ -12,7 +12,7 @@
 
 .search, .account {
     padding: 5px 30px;
-
+    text-align: center;
 }
 
 .account {
@@ -21,7 +21,6 @@
 
     color: black;
 
-    text-align: center;
 }
 
 .name {
