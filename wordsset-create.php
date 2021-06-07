@@ -36,6 +36,6 @@ if (empty($_SESSION['id_user']) || ! isUserAdmin($mysqli, (int) $_SESSION['id_us
     ?>
 
     <script src="/assets/js/classes/Messanger.js"></script>
-    <script src="/assets/js/wordsset-create.js"></script>
+    <script src="/assets/js/show-error.js"></script>
 </body>
 </html>

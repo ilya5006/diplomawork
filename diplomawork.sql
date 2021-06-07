@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Хост: 127.0.0.1:3306
--- Время создания: Июн 05 2021 г., 16:49
+-- Время создания: Июн 07 2021 г., 16:04
 -- Версия сервера: 8.0.19
 -- Версия PHP: 8.0.1
 
@@ -77,9 +77,9 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `login`, `password`, `fio`, `id_role`) VALUES
-(7, 'new-admin', '$2y$10$V4Mmnx0lHQvH05H0efXoIum7uBOVyGp4WAk3/19PYZGYz5QzJUhX2', 'new-admin', 1),
-(12, 'user', '$2y$10$chhtg1wjMZi9WLORZ3uiU.LzfYgZtIQH/34A5NovRSThLk2/3QIFq', 'user user user', 2),
-(13, 'admin', '$2y$10$ju00YLgmVY1EWGxIvliZXuew8Z9UBrShQtX0ynmbFBdueWMwI/L2a', 'admin', 1);
+(7, 'new-admin', '$2y$10$V4Mmnx0lHQvH05H0efXoIum7uBOVyGp4WAk3/19PYZGYz5QzJUhX2', 'Гордеев Платон Матвеевич', 1),
+(12, 'user', '$2y$10$chhtg1wjMZi9WLORZ3uiU.LzfYgZtIQH/34A5NovRSThLk2/3QIFq', 'Белов Исак Яковлевич', 2),
+(13, 'admin', '$2y$10$ju00YLgmVY1EWGxIvliZXuew8Z9UBrShQtX0ynmbFBdueWMwI/L2a', 'Комаров Алан Семенович', 1);
 
 -- --------------------------------------------------------
 
@@ -98,9 +98,9 @@ CREATE TABLE `wordssets` (
 --
 
 INSERT INTO `wordssets` (`id`, `name`, `words`) VALUES
-(1, 'dadwad', 'example line too carry work she an both been three these paper close be away go second thing line air thing men another look year river way talk those boy great few new find eat play America grow may along will need before head place know read idea follow sentence without men also play walk light close paid able all reports companies car home quality command At corporate often certain received Last looking best doesn\'t Last example line too carry work she an both been three these paper close be line air thing year river way great few new find grow may along head place know sentence walk light close paid able all reports companies car home quality command At corporate often certain received Last looking best doesn\'t Last words'),
-(2, 'admin', 'text energy similar drug requirements can\'t And trying It On cents created you basis July also received isn\'t DOS fall ago gain market drive around began file which annual conditions nation\'s North within P three their When exchange ever nuclear total rather Mr. until was bid security any central commercial prices of workers T speed needs be needed but know decided t potentialechnical Mr cent German income toward America stocks such applications uses taking within authorities She potential believe yen I\'m management'),
-(3, 'new wordsset', 'On cents also received market which North exchange until was commercial needs be cent German stocks such within believe yen');
+(1, 'Набор слов 1', 'paper line year few new find eat play America grow may along will need before head place know read idea follow sentence without men also play walk light close paid able all reports companies car home quality command At corporate often certain received Last looking best doesn\'t Last example line too carry work she an both been three these paper close be line air thing year river way'),
+(2, 'Набор слов 2', 'text energy similar drug requirements can\'t And trying It On cents created you basis July also received isn\'t DOS fall ago gain market drive around began file which annual conditions nation\'s North within P three their When exchange ever nuclear total rather Mr. until was bid security any central commercial prices of workers T speed needs be needed but know decided t potentialechnical Mr cent German income toward America stocks such applications uses taking within authorities She potential believe yen I\'m management'),
+(3, 'Набор слов 3', 'On cents also received market which North exchange until was commercial needs be cent German stocks such within believe yen');
 
 --
 -- Индексы сохранённых таблиц

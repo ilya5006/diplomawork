@@ -16,7 +16,7 @@ $idRole = 1; // administrator
 $isUserExists = $mysqli->query("SELECT COUNT(*) as `count` FROM `users` WHERE `login` = '$login'")->fetch_assoc()['count'] > 0;
 
 if ($isUserExists) {
-    header('Location: /student-registration.php?error=Пользователь+с+таким+логином+уже+существует');
+    header('Location: /admin-registration.php?error=Администратор+с+таким+логином+уже+существует');
     die();
 }
 

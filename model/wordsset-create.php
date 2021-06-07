@@ -12,7 +12,7 @@ if (mime_content_type($wordssetFile['tmp_name']) !== 'text/plain') {
     die();
 }
 
-$wordsset = $mysqli->real_escape_string(file_get_contents($wordssetFile['tmp_name']));
+$wordsset = htmlentities($mysqli->real_escape_string(file_get_contents($wordssetFile['tmp_name'])));
 
 //sprintf() because of apostrophes
 $mysqli->query(

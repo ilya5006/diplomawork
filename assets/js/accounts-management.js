@@ -14,4 +14,4 @@ search.addEventListener('input', (event) => {
     suitableAccounts.forEach((account) => {
         accountsContainer.appendChild(account);
     });
-})
+});

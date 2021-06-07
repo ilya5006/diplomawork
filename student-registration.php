@@ -25,6 +25,7 @@ if (empty($_SESSION['id_user']) || ! isUserAdmin($mysqli, (int) $_SESSION['id_us
 
     <link rel="stylesheet" href="./assets/css/main.css">
     <link rel="stylesheet" href="./assets/css/admin.css">
+    <link rel="stylesheet" href="./assets/css/messanger.css">
     <link rel="stylesheet" href="./assets/css/student-registration.css">
 
     <title>Регистрация студента</title>
@@ -33,5 +34,8 @@ if (empty($_SESSION['id_user']) || ! isUserAdmin($mysqli, (int) $_SESSION['id_us
     <?php 
     include './views/student-registration.php';
     ?>
+
+    <script src="/assets/js/classes/Messanger.js"></script>
+    <script src="/assets/js/show-error.js"></script>
 </body>
 </html>

@@ -21,7 +21,7 @@ function getIntervals(elements) {
 }
 
 function shuffle(elements) {
-    let randomIndexes = []
+    let randomIndexes = [];
 
     let firstIndex = 0;
     let lastIndex = elements.length - 1;
