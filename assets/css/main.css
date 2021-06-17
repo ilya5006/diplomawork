@@ -67,3 +67,11 @@ input[type="submit"], button {
     color: black;
     text-transform: uppercase;
 }
+
+@media screen and (max-width: 770px) {
+    .page-title {
+        position: relative;
+    }
+
+    
+}
